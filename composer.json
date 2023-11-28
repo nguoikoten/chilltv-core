@@ -1,0 +1,38 @@
+{
+    "name": "chilltvpack/chilltv-core",
+    
+    "description": "Chilltv's core features",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Chilltv",
+            "email": "hr.anveco@gmail.xyz"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^6|^7|^8",
+        "ckfinder/ckfinder-laravel-package": "v3.5.2.1",
+        "chilltvpack/laravel-caching-model": "^1.0.0",
+        "chilltvpack/crud": "^1.0.0",
+        "chilltvpack/settings": "^1.0.0",
+        "chilltvpack/permissionmanager": "^1.0.0",
+        "spatie/laravel-sitemap": "^5.8",
+        "artesaos/seotools": "^v0.22.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Chilltv\\Core\\": "src/",
+            "Chilltv\\Core\\Database\\Factories\\": "database/factories/",
+            "Chilltv\\Core\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chilltv\\Core\\ChilltvServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
